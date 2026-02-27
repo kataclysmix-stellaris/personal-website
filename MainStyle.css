@@ -1,0 +1,106 @@
+body {
+    background-image: url("Images/cloudbg.jpg");
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-position: top center;
+
+    background-color: rgba(255, 193, 234, 0.6); /* bubblegum tint overlay */
+    background-blend-mode: lighten; /* softens and unifies the look */
+  
+    font-family: "Trebuchet MS", Verdana, sans-serif;
+    color: #4b004b;
+    line-height: 1.6;
+    margin: 2em;
+}
+@keyframes sparkle {
+    0%, 100% { text-shadow: 0 0 5px #66adff, 0 0 10px #a6bbff; }
+    50% { text-shadow: 0 0 8px #99b9ff, 0 0 15px #4769b3; }
+}
+nav {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: #389bff;
+    animation: sparkle 2s infinite alternate;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lucida Handwriting", "Comic Sans MS", cursive, sans-serif;
+    color: #c446e4;
+    text-shadow: 1px 1px #cba6ff;
+    letter-spacing: 1px;
+    margin: 0em;
+    text-align: center;
+}
+h2 {
+    text-decoration: underline;
+}
+main {
+    fill-opacity: 0.5;
+    background-position: center;
+    background-image: url("Images/paperbg.jpg");
+    background-size: cover;
+    min-height: fit-content;
+    max-height: max-content;
+    background-repeat: repeat-y;
+    background-color: rgb(235, 200, 255);
+    background-blend-mode: lighten;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 2em;
+    margin: 2em auto;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(255, 102, 204, 0.3);
+}
+table, tr, td, hr {
+    background-color: #fff;
+    border-width: 1px;
+    border-style: dashed;
+    border-color: #b3478f;
+}
+table {
+    min-width: 35%;
+    max-width: 100%;
+}
+picture {
+    max-width: fit-content;
+}
+td {
+    padding: 0.5em;
+}
+span.note {
+    display: inline;
+    opacity: 25%;
+    font-size: small;
+}
+td.text {
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+#mutebutton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #ff86d7; /* soft pink */
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+#mutebutton:hover {
+    background-color: #d462b8;
+    transform: scale(1.1);
+  }
+#muteicon {
+    width: 95%;
+    height: 95%;
+    align-self: center;
+    object-fit: contain;
+  }

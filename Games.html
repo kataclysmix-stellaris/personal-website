@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="MainStyle.css">
+        <title>Repeat Replay | Kataclysmix</title>
+    </head>
+    <body>
+        <audio id="bgm" src="Music/BIRDBRAIN「バードブレイン」[6-N163, VRC6] - SomeBoyWhoMusics (youtube).mp3" autoplay loop muted></audio>
+        <button id="mutebutton">
+            <img id="muteicon" src="Images/mute.png" alt="" />
+        </button>
+        <script>
+        const audio = document.getElementById("bgm");
+        const btn = document.getElementById("mutebutton");
+        const icon = document.getElementById("muteicon")
+        audio.volume = 0.15;
+        btn.addEventListener("click", () => {
+        if (audio.muted) {
+            audio.muted = false;
+            audio.play();
+            icon.src = "Images/volume.png";
+            }
+        else {
+            audio.muted = true;
+            audio.pause();
+            icon.src = "Images/mute.png"
+            }
+        
+        });
+        </script>
+        <main>
+            <header>
+                <h1>
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                    Heyyyy! Welcome to my little website!
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                </h1>
+                <hr>
+                <nav>
+                    <a href="Home.html" target="_blank">Home</a>
+                    |
+                    <a href="Music.html" target="_blank">Favorite Songs</a>
+                    |
+                    <a href="#top">Favorite Games</a>
+                    |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+                <hr>
+            </header>
+            <h2>Here's some of the games I play!</h2>
+                    <table>
+                        <tr>
+                            <td>
+                                    <a href="https://www.playstation.com/en-us/games/bloodborne/">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/bloodborne.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/bloodborne.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/bloodborne.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/bloodborne.webp" type="image/webp" alt="" title="Bloodborne">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    Bloodborne
+                                </td>
+                                <td class="text">
+                                    A Dark Souls-esque game.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.cultofthelamb.com/">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/cultofthelamb.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/cultofthelamb.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/cultofthelamb.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/cultofthelamb.webp" type="image/webp" alt="" title="Cult Of The Lamb">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    Cult Of The Lamb
+                                </td>
+                                <td class="text">
+                                    A rogue-lite game where you gather resources and defeat enemies that threaten your followers.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://deltarune.com/">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/deltarune.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/deltarune.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/deltarune.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/deltarune.webp" type="image/webp" alt="" title="Deltarune">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    Deltarune
+                                </td>
+                                <td class="text">
+                                    A bullet-hell RPG where you seal darkness away in another realm to save both your own realm and the other realm.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://www.minecraft.net/en-us">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/minecraft.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/minecraft.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/minecraft.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/minecraft.webp" type="image/webp" alt="" title="Minecraft">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    Minecraft
+                                </td>
+                                <td class="text">
+                                    A famous sandbox game. Get resources to survive the nights, or play god, and use blocks to create whatever you want.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://store.steampowered.com/app/1150690/OMORI/">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/omori.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/omori.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/omori.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/omori.webp" type="image/webp" alt="" title="Omori">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    Omori
+                                </td>
+                                <td class="text">
+                                    A psychological horror game where you must find out the truth or remain trapped in your dreams.<br><span class="note">(143)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="https://wanganmaxi-official.com/wanganmaxi5dxplus/en/">
+                                        <picture>
+                                            <source media="(width: 250px)" srcset="Images/maxtune.webp" type="image/webp">
+                                            <source media="(width: 250px)" srcset="Images/maxtune.jpg" type="image/jpg">
+                                            <source media="(width: 250px)" srcset="Images/maxtune.png" type="image/png">
+                                            <img style="width: 250px;" src="Images/maxtune.webp" type="image/webp" alt="" title="MaxTune">
+                                        </picture>
+                                    </a>
+                                </td>
+                                <td class="text">
+                                    MaxTune
+                                </td>
+                                <td class="text">
+                                    A racing game where you race others, ghosts, or CPU.
+                                </td>
+                            </tr>
+                    </table>
+            <footer>
+                <hr/>
+                <nav>
+                    <a href="Home.html" target="_blank">Home</a> |
+                    <a href="Music.html" target="_blank">Favorite Songs</a> |
+                    <a href="#top">Favorite Games</a> |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+            </footer>
+        </main>
+    </body>
+</html>

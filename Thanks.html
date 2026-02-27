@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="MainStyle.css">
+        <title>Thank You! | Kataclysmix</title>
+    </head>
+    <body>
+        <main>
+            <audio id="bgm" src="Music/StaticSongEightBit.mp3" autoplay loop muted></audio>
+            <button id="mutebutton">
+                <img id="muteicon" src="Images/mute.png" alt="" />
+            </button>
+            <script>
+            const audio = document.getElementById("bgm");
+            const btn = document.getElementById("mutebutton");
+            const icon = document.getElementById("muteicon")
+            audio.volume = 0.15;
+            btn.addEventListener("click", () => {
+            if (audio.muted) {
+                audio.muted = false;
+                audio.play();
+                icon.src = "Images/volume.png";
+                }
+            else {
+                audio.muted = true;
+                audio.pause();
+                icon.src = "Images/mute.png"
+                }
+            
+            });
+            </script>
+            <header>
+                <h1>
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                    Heyyyy! Welcome to my little website!
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                </h1>
+                <hr/>
+                <nav>
+                    <a href="Home.html" target="_blank">Home</a> |
+                    <a href="Music.html" target="_blank">Favorite Songs</a> |
+                    <a href="Games.html" target="_blank">Favorite Games</a> |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+                <hr>
+            </header>
+            <p>Thanks for your questions and/or comments! My email is <a href="mailto: dawnbringer@versiontwenty.com">dawnbringer@versiontwenty.com</a> if you have further concerns!</p>
+            <span class="note">
+                <p>
+                    <a href="Home.html">
+                        Go back.
+                    </a>
+                    You shouldn't stay for too long.
+                </p>
+            </span>
+            <p>
+                <img style="width: 5%; height: 5%; background-image: radial-gradient(circle at center, rgba(124, 124, 124, 0.15), rgba(255, 255, 255, 0)); border-radius: 100%;" src="Images/eye.gif" alt="">
+            </p>
+            <footer>
+                <hr/>
+                <nav>
+                    <a href="Home.html" target="_blank">Home</a> |
+                    <a href="Music.html" target="_blank">Favorite Songs</a> |
+                    <a href="#top">Favorite Games</a> |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+            </footer>
+        </main>
+    </body>
+</html>

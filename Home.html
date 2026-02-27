@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="MainStyle.css">
+        <title>Home | Kataclysmix</title>
+    </head>
+    <body>
+        <audio id="bgm" src="Music/KAT & Aku P - Affection Addiction [Chiptune Cover] - anchoa (youtube).mp3" autoplay loop muted></audio>
+        <button id="mutebutton">
+            <img id="muteicon" src="Images/mute.png" alt="" />
+        </button>
+        <script>
+        const audio = document.getElementById("bgm");
+        const btn = document.getElementById("mutebutton");
+        const icon = document.getElementById("muteicon")
+        audio.volume = 0.15;
+        btn.addEventListener("click", () => {
+        if (audio.muted) {
+            audio.muted = false;
+            audio.play();
+            icon.src = "Images/volume.png";
+            }
+        else {
+            audio.muted = true;
+            audio.pause();
+            icon.src = "Images/mute.png"
+            }
+        
+        });
+        </script>
+        <main>
+            <header>
+                <h1>
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                    Heyyyy! Welcome to my little website!
+                    <img style="width: 5%;" src="Images/heartchase.gif" alt="">
+                </h1>
+                <hr/>
+                <nav>
+                    <a href="#top">Home</a>
+                    |
+                    <a href="Music.html" target="_blank">Favorite Songs</a>
+                    |
+                    <a href="Games.html" target="_blank">Favorite Games</a>
+                    |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+                <hr>
+            </header>
+            <br>
+            <h2>
+                Hey! I'm Kat!
+            </h2>
+            <p>
+                Let's see...I'm a 19 year old girl who likes gaming, music, UTAU, roleplay, drawing, and books.
+                <br> I'm a bit of a wildcard, a jack of all trades, if you will, and...
+                <br> Hm...maybe I can make this easier on myself.
+            </p>
+            <table>
+                <thead>
+                    <th colspan="2">
+                        About Me!
+                    </th>
+                </thead>
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        Katherine "Kat" Bowersox
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        What I look like:
+                    </td>
+                    <td>
+                        <a href="Images/meandweegee.jpg" target="_blank"><img style="width: 15%;" src="Images/meandweegee.jpg" alt="A brunette with a brown tabby cat on her lap."></a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Birthday:
+                    </td>
+                    <td>
+                        February 3rd, 2006
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Alignment:
+                    </td>
+                    <td>
+                        Neutral Good
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Gender:
+                    </td>
+                    <td>
+                        Feminine non-binary
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Pronouns:
+                    </td>
+                    <td>
+                        She/they
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hobbies:
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Playing video games
+                            </li>
+                            <li>
+                                Editing and animating
+                            </li>
+                            <li>
+                                Drawing
+                            </li>
+                            <li>
+                                Making music and hearing robots sing
+                            </li>
+                            <li>
+                                Roleplay
+                            </li>
+                            <li>
+                                Eating snacks
+                            </li>
+                            <li>
+                                Crimes <span class="note">(For legal reasons, this is obviously a joke)</span>
+                            </li>
+                            <li>
+                                Programming
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Likes:
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                My cat Luigi
+                            </li>
+                            <li>
+                                Memes
+                            </li>
+                            <li>
+                                Psychological horror
+                            </li>
+                            <li>
+                                My lil sisters
+                            </li>
+                            <li>
+                                My boyfriend
+                            </li>
+                            <li>
+                                Vocaloid
+                            </li>
+                            <li>
+                                Sour foods
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Dislikes:
+                    </td>
+                    <td>
+                        <ul>
+                            <li>
+                                Manipulation
+                            </li>
+                            <li>
+                                Drama
+                            </li>
+                            <li>
+                                Narcissists
+                            </li>
+                            <li>
+                                Loud noises
+                            </li>
+                            <li>
+                                Being talked down to
+                            </li>
+                            <li>
+                                Transphobia
+                            </li>
+                            <li>
+                                Homophobia
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+            <footer>
+                <hr/>
+                <nav>
+                    <a href="#top">Home</a>
+                    |
+                    <a href="Music.html" target="_blank">Favorite Songs</a>
+                    |
+                    <a href="Games.html" target="_blank">Favorite Games</a>
+                    |
+                    <a href="Contact.html" target="_blank">Come Say Hi!</a>
+                </nav>
+            </footer>
+        </main>
+    </body>
+</html>
